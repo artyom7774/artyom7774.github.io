@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(270deg, rgb(226, 226, 226), rgb(211, 211, 211) 60%, rgb(195, 195, 195));
+}
+
+.stats {
+    width: 15%;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 5px #444;
+    padding: 10px 16px;
+    background-image: linear-gradient(300deg, rgb(240, 240, 240), rgb(221, 221, 221) 60%, rgb(204, 204, 204));
+}
+
+.inventory {
+    position: relative;
+    top: 10px;
+
+    width: 15%;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 5px #444;
+    padding: 10px 16px;
+    background-image: linear-gradient(300deg, rgb(240, 240, 240), rgb(221, 221, 221) 60%, rgb(204, 204, 204));
+}
+
+h4 {
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+}
+
+h3 {
+    margin-block-start: 0.2em;
+    margin-block-end: 0.7em;
+}
