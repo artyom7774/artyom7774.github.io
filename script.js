@@ -38,7 +38,7 @@ async function getHelpMenu() {
         "title": "Downloads",
         "text": [
             "Github - <a href='https://github.com/artyom7774/Game-Engine-3'>https://github.com/artyom7774/Game-Engine-3</a>",
-            "Github releases - <a href='https://github.com/artyom7774/Game-Engine-3/Releases'>https://github.com/artyom7774/Game-Engine-3/Releases</a>"
+            "Github releases - <a href='https://github.com/artyom7774/Game-Engine-3/releases'>https://github.com/artyom7774/Game-Engine-3/releases</a>"
         ]
     }
 
