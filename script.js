@@ -10,8 +10,50 @@ function cache(func) {
 
         cache.set(key, func.apply(this, args));
 
+        console.log("Cache miss for key:", key, "Storing result:", cache.get(key));
+
         return cache.get(key);
     };
+}
+
+async function translate(word) {
+    if (word.length === 0) {
+        return "";
+    }
+
+    let point = false;
+
+    if (word[0] === '-') {
+        word = word.slice(1);
+        point = true;
+    }
+
+    let spaces = 0;
+
+    while (word[0] === ' ') {
+        word = word.slice(1);
+        spaces += 1;
+    }
+
+    if (language == "en"){
+        return (point ? '•' : '') + ' '.repeat(spaces) + word;
+    }
+
+    bundle = await cacheGetBundle(language);
+
+    // console.log(word, ' '.repeat(spaces) + word in bundle, word in bundle);
+
+    var answer = "";
+
+    if (' '.repeat(spaces) + word in bundle) {
+        return bundle[' '.repeat(spaces) + word];
+    } else if (word in bundle) {
+        answer = bundle[word];
+    } else {
+        answer = word;
+    }
+
+    return (point ? '•' : '') + ' '.repeat(spaces) + answer;
 }
 
 async function loadJSON(filePath) {
@@ -45,10 +87,16 @@ async function getHelpMenu() {
     return help;
 }
 
+async function getBundle(language) {
+    bundle = await cacheLoadJSON(`https://raw.githubusercontent.com/artyom7774/Game-Engine-3/main/scr/files/bundles/json/${language}.json`);
+
+    return bundle;
+}
+
 async function loadHelpMenu(menu, submenu) {
     help = await getHelpMenu()
 
-    console.log(help)
+    // console.log(help)
 
     now = help[menu];
 
@@ -61,10 +109,14 @@ async function loadHelpMenu(menu, submenu) {
 
     variables = [];
 
-    variables.push(`<p class="big-help-text">\t${now["title"]}</p>`);
+    text = await translate(now["title"])
+
+    variables.push(`<p class="big-help-text">\t${text}</p>`);
 
     for (const key in now["text"]) {
-        variables.push(`<p class="help-text">${now["text"][key]}</p>`);
+        text = await translate(now["text"][key])
+
+        variables.push(`<p class="help-text">${text}</p>`);
     }
 
     text = "";
@@ -73,12 +125,14 @@ async function loadHelpMenu(menu, submenu) {
         text += variables[index];
     }
 
-    text = "<div>" + text + "</div>";
+    text = `<div>` + text + "</div>";
 
     return text;
 };
 
 async function initialization(){
+    languageDislay();
+
     const contentClass = document.querySelector(".content");
     const contentMenu = document.querySelector(".menu");
     
@@ -89,7 +143,9 @@ async function initialization(){
     text = "";
 
     for (const name in help) {
-        text += `<li class="menu-submenu" id="${help[name]["name"]}">${help[name]["name"]}`;
+        variable = await translate(help[name]["name"])
+
+        text += `<li class="menu-submenu" id="${help[name]["name"]}">${variable}`;
 
         index = 0;
 
@@ -102,7 +158,9 @@ async function initialization(){
                 text += `<svg height="30" width="26"><polyline points="10,0 10,15 25,15 10,15 10,30" style="fill:none;stroke:white;stroke-width:1" /></svg>`;
             }
 
-            text += `<p class="menu-submenu-item" id="${help[name]["pages"][page]["title"]}">${help[name]["pages"][page]["title"]}</p>`;
+            variable = await translate(help[name]["pages"][page]["title"])
+
+            text += `<p class="menu-submenu-item" id="${help[name]["pages"][page]["title"]}">${variable}</p>`;
             text += `</div>`;
 
             index += 1;
@@ -125,6 +183,26 @@ async function initialization(){
     addMenuEventListeners();
 };
 
+function languageDislay() {
+    if (language == "ru") {
+        document.getElementById("ru").checked = true;
+    } else if (language == "en") {
+        document.getElementById("en").checked = true;
+    }
+}
+
+function languageChooseRussian() {
+    language = "ru";
+
+    initialization();
+}
+
+function languageChooseEnglish() {
+    language = "en";
+
+    initialization();
+}
+
 function addMenuEventListeners() {
     document.querySelectorAll(".menu-submenu-item").forEach(item => {
         item.addEventListener("click", async event => {
@@ -142,9 +220,16 @@ function addMenuEventListeners() {
 // INITIALIZE
 
 let cacheLoadJSON = cache(loadJSON);
+let cacheGetBundle = cache(getBundle)
+
+// VARIABLES
+
+var language = "en";
 
 // START
 
 document.addEventListener('DOMContentLoaded', function () {
     initialization();
 });
+
+// https://github.com/artyom7774/Game-Engine-3/releases/latest

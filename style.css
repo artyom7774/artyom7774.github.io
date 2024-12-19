@@ -18,7 +18,7 @@ content {
 }
 
 footer {
-
+    border-top: 1px solid #ccc;
 }
 
 .menu {
@@ -52,6 +52,8 @@ footer {
     padding-left: 20px;
     min-height: 100%;
     width: 100%;
+
+    font-size: 50px;
 }
 
 .big-help-text {
@@ -63,9 +65,18 @@ footer {
     font-family: Courier;
     font-size: 17px;
 
+    white-space: pre-line;
+
     min-height: 20px;
 
     margin: 5px;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding-top: 10px;
 }
 
 ul {
