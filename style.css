@@ -72,11 +72,23 @@ footer {
     margin: 5px;
 }
 
-.radio-group {
+.settings-language {
     display: grid;
     grid-template-columns: 1fr;
 
     padding-top: 10px;
+}
+
+.settings-language-element {
+    padding-top: 5px;
+}
+
+.settings-language-element-button {
+    
+}
+
+.settings-language-element-text {
+    
 }
 
 ul {

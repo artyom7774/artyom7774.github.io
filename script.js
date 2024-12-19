@@ -16,6 +16,23 @@ function cache(func) {
     };
 }
 
+async function loadJSON(filePath) {
+    try {
+        const response = await fetch(filePath);
+
+        if (!response.ok) {
+            throw new Error("Сеть не в порядке: " + response.statusText);
+        }
+
+        const data = await response.json();
+
+        return data;
+
+    } catch (error) {
+        console.error("Ошибка загрузки JSON:", error);
+    }
+}
+
 async function translate(word) {
     if (word.length === 0) {
         return "";
@@ -54,23 +71,6 @@ async function translate(word) {
     }
 
     return (point ? '•' : '') + ' '.repeat(spaces) + answer;
-}
-
-async function loadJSON(filePath) {
-    try {
-        const response = await fetch(filePath);
-
-        if (!response.ok) {
-            throw new Error("Сеть не в порядке: " + response.statusText);
-        }
-
-        const data = await response.json();
-
-        return data;
-
-    } catch (error) {
-        console.error("Ошибка загрузки JSON:", error);
-    }
 }
 
 async function getHelpMenu() {
@@ -130,7 +130,7 @@ async function loadHelpMenu(menu, submenu) {
     return text;
 };
 
-async function initialization(){
+async function initialization(full=true){
     languageDislay();
 
     const contentClass = document.querySelector(".content");
@@ -173,9 +173,11 @@ async function initialization(){
 
     // SET START CONTENT TEXT
 
-    const submenu = document.getElementById("Game Engine 3");
-    const menu = submenu.parentElement.parentElement;
-
+    if (full) {
+        submenu = document.getElementById("Game Engine 3");
+        menu = submenu.parentElement.parentElement;
+    }
+    
     contentClass.innerHTML = await loadHelpMenu(menu.id, submenu.id);
 
     // FINISH
@@ -194,13 +196,13 @@ function languageDislay() {
 function languageChooseRussian() {
     language = "ru";
 
-    initialization();
+    initialization(false);
 }
 
 function languageChooseEnglish() {
     language = "en";
 
-    initialization();
+    initialization(false);
 }
 
 function addMenuEventListeners() {
@@ -219,6 +221,8 @@ function addMenuEventListeners() {
 
 // INITIALIZE
 
+var menu, submenu;
+
 let cacheLoadJSON = cache(loadJSON);
 let cacheGetBundle = cache(getBundle)
 
@@ -229,7 +233,7 @@ var language = "en";
 // START
 
 document.addEventListener('DOMContentLoaded', function () {
-    initialization();
+    initialization(true);
 });
 
 // https://github.com/artyom7774/Game-Engine-3/releases/latest
