@@ -237,5 +237,3 @@ var language = "en";
 document.addEventListener('DOMContentLoaded', function () {
     initialization();
 });
-
-// https://github.com/artyom7774/Game-Engine-3/releases/latest
