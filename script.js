@@ -16,23 +16,6 @@ function cache(func) {
     };
 }
 
-async function loadJSON(filePath) {
-    try {
-        const response = await fetch(filePath);
-
-        if (!response.ok) {
-            throw new Error("Сеть не в порядке: " + response.statusText);
-        }
-
-        const data = await response.json();
-
-        return data;
-
-    } catch (error) {
-        console.error("Ошибка загрузки JSON:", error);
-    }
-}
-
 async function translate(word) {
     if (word.length === 0) {
         return "";
@@ -73,14 +56,37 @@ async function translate(word) {
     return (point ? '•' : '') + ' '.repeat(spaces) + answer;
 }
 
+async function loadJSON(filePath) {
+    try {
+        const response = await fetch(filePath);
+
+        if (!response.ok) {
+            throw new Error("Сеть не в порядке: " + response.statusText);
+        }
+
+        const data = await response.json();
+
+        return data;
+
+    } catch (error) {
+        console.error("Ошибка загрузки JSON:", error);
+    }
+}
+
 async function getHelpMenu() {
     help = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/Game-Engine-3/main/scr/site/help.json");
+
+    version = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/Game-Engine-3/main/scr/files/version.json");
+
+    link = `https://github.com/artyom7774/Game-Engine-3/releases/download/GE${version["version"]}/Game.Engine.3.exe`;
 
     help["Main"]["pages"]["2"] = {
         "title": "Downloads",
         "text": [
             "Github - <a href='https://github.com/artyom7774/Game-Engine-3'>https://github.com/artyom7774/Game-Engine-3</a>",
-            "Github releases - <a href='https://github.com/artyom7774/Game-Engine-3/releases'>https://github.com/artyom7774/Game-Engine-3/releases</a>"
+            "Github releases - <a href='https://github.com/artyom7774/Game-Engine-3/releases'>https://github.com/artyom7774/Game-Engine-3/releases</a>",
+            "",
+            `Download - <a href='${link}'>${link}</a>`
         ]
     }
 
@@ -130,7 +136,7 @@ async function loadHelpMenu(menu, submenu) {
     return text;
 };
 
-async function initialization(full=true){
+async function initialization(){
     languageDislay();
 
     const contentClass = document.querySelector(".content");
@@ -173,11 +179,9 @@ async function initialization(full=true){
 
     // SET START CONTENT TEXT
 
-    if (full) {
-        submenu = document.getElementById("Game Engine 3");
-        menu = submenu.parentElement.parentElement;
-    }
-    
+    const submenu = document.getElementById("Game Engine 3");
+    const menu = submenu.parentElement.parentElement;
+
     contentClass.innerHTML = await loadHelpMenu(menu.id, submenu.id);
 
     // FINISH
@@ -196,13 +200,13 @@ function languageDislay() {
 function languageChooseRussian() {
     language = "ru";
 
-    initialization(false);
+    initialization();
 }
 
 function languageChooseEnglish() {
     language = "en";
 
-    initialization(false);
+    initialization();
 }
 
 function addMenuEventListeners() {
@@ -221,8 +225,6 @@ function addMenuEventListeners() {
 
 // INITIALIZE
 
-var menu, submenu;
-
 let cacheLoadJSON = cache(loadJSON);
 let cacheGetBundle = cache(getBundle)
 
@@ -233,7 +235,7 @@ var language = "en";
 // START
 
 document.addEventListener('DOMContentLoaded', function () {
-    initialization(true);
+    initialization();
 });
 
 // https://github.com/artyom7774/Game-Engine-3/releases/latest
