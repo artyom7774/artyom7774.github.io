@@ -78,7 +78,7 @@ async function getHelpMenu() {
 
     version = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/Game-Engine-3/main/scr/files/version.json");
 
-    link = `https://github.com/artyom7774/Game-Engine-3/releases/download/GE${version["version"]}/Game.Engine.3.exe`;
+    link = `https://github.com/artyom7774/Game-Engine-3/releases/download/GE${version["version"]}/Game.Engine.3.sfx.exe`;
 
     help["Main"]["pages"]["2"] = {
         "title": "Downloads",
