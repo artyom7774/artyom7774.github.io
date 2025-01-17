@@ -1,98 +1,103 @@
-html {
-    font-family: Courier;
-    font-size: 17px;
-}
-
 body {
-    color: #e4e7eb;
-
-    background-color: #202124;
+    background-color: #f0f0f0;
+    font-family: Courier, monospace;
 }
 
-header {
+.header {
+    background-color: #ffffff;
 
-}
+    padding: 5px;
 
-content {
-    display: flex;
-}
-
-footer {
-    border-top: 1px solid #ccc;
-}
-
-.menu {
-    width: 20em;
-    border-right: 1px solid #ccc;
-    padding-right: 10px;
-}
-
-.menu-submenu {
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    padding-left: 20px;
-}
-
-.menu-submenu-element {
-    display: flex;
-}
-
-.menu-submenu-item {
+    min-height: 10vh;
     margin: 5px;
+    margin-bottom: 10px;
+}
 
-    height: 20px;
+.header__name {
+    font-size: 25px;
 
-    display: block;
+    margin: 2px;
+}
 
-    cursor: pointer;
+.header__discription {
+    margin: 2px;
 }
 
 .content {
-    padding-left: 20px;
-    min-height: 100%;
-    width: 100%;
-
-    font-size: 50px;
-}
-
-.big-help-text {
-    font-family: Consolas;
-    font-size: 25px;
-}
-
-.help-text {
-    font-family: Courier;
-    font-size: 17px;
-
-    white-space: pre-line;
-
-    min-height: 20px;
+    display: flex;
+    min-height: 95vh;
 
     margin: 5px;
 }
 
-.radio-group {
-    display: grid;
-    grid-template-columns: 1fr;
+.content__menu {
+    background-color: #ffffff;
 
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 5px;
+
+    margin-right: 10px;
+    width: 20%;
 }
 
-ul {
-    list-style-type: none;
+.content__main {
+    background-color: #ffffff;
 
-    padding: 0;
+    padding: 5px;
+
+    width: 80%;
 }
 
-li {
-    list-style-type: none;
+.content__main__name {
+    font-size: 25px;
 
-    margin: 5px 0;
+    margin: 2px;
+
+    margin-left: 50px;
+}
+
+.content__submain__name {
+    font-size: 20px;
+
+    margin: 2px;
+
+    margin-left: 20px;
+}
+
+.content__main__discription {
+    margin: 2px;
+}
+
+.content__menu__button {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 3px;
+    padding: 0px;
+}
+
+.content__menu__button:hover {
+    color: grey;
+}
+
+.footer {
+    margin: 5px;
 }
 
 p {
-    white-space: pre;
+    margin: 2px;
 
-    word-wrap: break-word;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    font-family: Courier, monospace;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }

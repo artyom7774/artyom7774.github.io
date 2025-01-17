@@ -2,41 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Game Engine 3</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    
     <body>
-        <header>
-
+        <header class="header">
+            <p class="header__name">Game Engine 3</p>
+            <p class="header__discription">A shell for creating applications and games with a graphical editor in the Python 3 programming language.</p>
         </header>
 
-        <content>
-            <div class="menu">
-                MENU ELEMENTS
+        <content class="content">
+            <div class="content__menu">
+                <button class="content__menu__button">> Game Engine 3</button>
             </div>
-
-            <div class="content">
-                <p class="content-value">CONTENT TEXT</p>
+            <div class="content__main">
+                ...
             </div>
         </content>
-        
-        <footer>
-            <form>
-                <div class="radio-group">
-                    <div>
-                        <input type="radio" id="ru" name="choose" onclick="languageChooseRussian()">
-                        <label for="ru">Русский</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="en" name="choose" onclick="languageChooseEnglish()">
-                        <label for="en">English</label>
-                    </div>
-                </div>
-            </form>
+
+        <footer class="footer">
+
         </footer>
-        
         <script src="script.js"></script>
     </body>
 </html>
