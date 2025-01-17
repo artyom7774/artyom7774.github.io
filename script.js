@@ -61,6 +61,7 @@ var menues = {
 
 var translates = {
     "ru": {
+        "A shell for creating applications and games with a graphical editor in the Python 3 programming language": "Оболочка для создания приложений и игр с графическим редактором на языке программирования Python 3",
         "Download": "Загрузка",
         "Control": "Управление",
         "Nodes": "Ноды",
@@ -171,6 +172,14 @@ async function mainInformationView(){
     mainClass.innerHTML = text;
 }
 
+async function headerView(){
+    const menuHeader = document.querySelector(".header__discription");
+
+    console.log(menuHeader);
+    
+    menuHeader.innerHTML = translate("A shell for creating applications and games with a graphical editor in the Python 3 programming language");
+}
+
 async function initialization(){
     var en = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/en.json");
     var ru = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/ru.json");
@@ -217,6 +226,7 @@ async function initialization(){
     menuClass.innerHTML = text;
 
     mainInformationView();
+    headerView();
 }
 
 async function setLanguage(lang) {
