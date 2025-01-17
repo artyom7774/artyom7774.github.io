@@ -61,7 +61,7 @@ var menues = {
 
 var translates = {
     "ru": {
-        "A shell for creating applications and games with a graphical editor in the Python 3 programming language": "Оболочка для создания приложений и игр с графическим редактором на языке программирования Python 3",
+        "A shell for creating applications and games with a visual editor in the Python 3 programming language": "Оболочка для создания приложений и игр с визуальным редактором на языке программирования Python 3",
         "Download": "Загрузка",
         "Control": "Управление",
         "Nodes": "Ноды",
@@ -177,7 +177,7 @@ async function headerView(){
 
     console.log(menuHeader);
     
-    menuHeader.innerHTML = translate("A shell for creating applications and games with a graphical editor in the Python 3 programming language");
+    menuHeader.innerHTML = translate("A shell for creating applications and games with a visual editor in the Python 3 programming language");
 }
 
 async function initialization(){
