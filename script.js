@@ -135,7 +135,7 @@ async function mainInformationView(){
 
     mainClass.innerHTML = text;
 }
-
+//
 async function initialization(){
     var en = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/en.json");
     var ru = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/ru.json");
