@@ -13,7 +13,22 @@
 
         <content class="content">
             <div class="content__menu">
-                <button class="content__menu__button">> Game Engine 3</button>
+                <div class="content__menu__choose">
+                    <button class="content__menu__button">> Game Engine 3</button>
+                </div>
+                <div class="content__menu__separator">
+
+                </div>
+                <div class="content__menu__settings">
+                    <form class="header__language__settings">
+                        <label>
+                            <input type="radio" name="language" value="ru" onclick="setLanguage('ru')"> Русский
+                        </label>
+                        <label>
+                            <input type="radio" name="language" value="en" onclick="setLanguage('en')"> English
+                        </label>
+                    </form>
+                </div>
             </div>
             <div class="content__main">
                 ...

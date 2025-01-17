@@ -17,13 +17,13 @@
         ]
     },
     "Download": {
-        "name": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c",
+        "name": "Download",
         "text": [
             "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0432\u0435\u0440\u0441\u0438\u044f: <a href='https://github.com/artyom7774/Game-Engine-3/releases/download/GE%version%/Game.Engine.3.sfx.exe'>https://github.com/artyom7774/Game-Engine-3/releases/download/GE%version%/Game.Engine.3.sfx.exe</a>"
         ]
     },
     "Control": {
-        "name": "\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435",
+        "name": "Control",
         "text": [
             "<p class='content__main__name'>\u0421\u0446\u0435\u043d\u0430</p>",
             "\u0414\u0432\u0438\u0436\u0435\u043d\u0438\u0435 - \u043c\u044b\u0448\u044c",
@@ -48,7 +48,7 @@
         ]
     },
     "Nodes": {
-        "name": "\u0423\u0437\u043b\u044b",
+        "name": "Nodes",
         "text": [
             "<p class='content__main__name'>\u041f\u0440\u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0435 \u0438\u0433\u0440\u044b</p>",
             "\u0412\u0445\u043e\u0434: -",
@@ -375,7 +375,7 @@
         ]
     },
     "Nodes/Events": {
-        "name": "\u0421\u043e\u0431\u044b\u0442\u0438\u044f \u0443\u0437\u043b\u043e\u0432",
+        "name": "Nodes/Events",
         "text": [
             "<p class='content__main__name'>\u041f\u0440\u0438 \u0441\u0442\u0430\u0440\u0442\u0435 \u0438\u0433\u0440\u044b</p>",
             "\u0412\u0445\u043e\u0434: -",
@@ -429,7 +429,7 @@
         ]
     },
     "Nodes/Loops": {
-        "name": "\u0426\u0438\u043a\u043b\u044b \u0443\u0437\u043b\u043e\u0432",
+        "name": "Nodes/Loops",
         "text": [
             "<p class='content__main__name'>\u0414\u043b\u044f N \u0440\u0430\u0437</p>",
             "\u0412\u0445\u043e\u0434: \u043f\u0443\u0442\u044c, N, X",
@@ -466,7 +466,7 @@
         ]
     },
     "Nodes/Text": {
-        "name": "\u0423\u0437\u043b\u044b \u0422\u0435\u043a\u0441\u0442",
+        "name": "Nodes/Text",
         "text": [
             "<p class='content__main__name'>\u0421\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u044c \u0442\u0435\u043a\u0441\u0442</p>",
             "\u0412\u0445\u043e\u0434: \u043f\u0443\u0442\u044c, \u043f\u0435\u0440\u0432\u044b\u0439 \u0442\u0435\u043a\u0441\u0442, \u0432\u0442\u043e\u0440\u043e\u0439 \u0442\u0435\u043a\u0441\u0442",
@@ -499,7 +499,7 @@
         ]
     },
     "Nodes/Numbers": {
-        "name": "\u0423\u0437\u043b\u044b \u0427\u0438\u0441\u043b\u0430",
+        "name": "Nodes/Numbers",
         "text": [
             "<p class='content__main__name'>A + B</p>",
             "\u0412\u0445\u043e\u0434: \u043f\u0443\u0442\u044c, a, b",
@@ -532,7 +532,7 @@
         ]
     },
     "Nodes/Logic": {
-        "name": "\u0423\u0437\u043b\u044b \u041b\u043e\u0433\u0438\u043a\u0430",
+        "name": "Nodes/Logic",
         "text": [
             "<p class='content__main__name'>\u0415\u0441\u043b\u0438</p>",
             "\u0412\u0445\u043e\u0434: \u043f\u0443\u0442\u044c, a, \u0443\u0441\u043b\u043e\u0432\u0438\u0435, b",
@@ -551,7 +551,7 @@
         ]
     },
     "Nodes/Objects": {
-        "name": "\u0423\u0437\u043b\u044b \u041e\u0431\u044a\u0435\u043a\u0442\u044b",
+        "name": "Nodes/Objects",
         "text": [
             "<p class='content__main__name'>\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c ID \u043e\u0431\u044a\u0435\u043a\u0442\u0430 \u043f\u043e \u0438\u043c\u0435\u043d\u0438</p>",
             "\u0412\u0445\u043e\u0434: \u043f\u0443\u0442\u044c, \u0438\u043c\u044f \u043e\u0431\u044a\u0435\u043a\u0442\u0430",
@@ -619,7 +619,7 @@
         ]
     },
     "Nodes/Another": {
-        "name": "\u0423\u0437\u043b\u044b \u0414\u0440\u0443\u0433\u043e\u0435",
+        "name": "Nodes/Another",
         "text": [
             "<p class='content__main__name'>\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u0443\u044e</p>",
             "\u0412\u0445\u043e\u0434: \u043f\u0443\u0442\u044c, \u0438\u043c\u044f \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0439, \u0433\u043b\u043e\u0431\u0430\u043b\u044c\u043d\u0430\u044f, \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0439",
@@ -638,7 +638,7 @@
         ]
     },
     "Guides": {
-        "name": "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u0430",
+        "name": "Guides",
         "text": [
             "TODO: \u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0435 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0435",
             "TODO: \u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044e \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u043d\u0430 GE3 \u0441 'Hello, world' \u0438 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u043c\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u0430",
@@ -647,7 +647,7 @@
         ]
     },
     "Guides/Start": {
-        "name": "\u041d\u0430\u0447\u0430\u043b\u043e \u0440\u0430\u0431\u043e\u0442\u044b",
+        "name": "Guides/Start",
         "text": [
             "<p class='content__main__name'>\u041d\u0430\u0447\u0430\u043b\u043e</p>",
             "\u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0435 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u0444\u0443\u043d\u043a\u0446\u0438\u0439 \u043f\u0440\u043e\u0435\u043a\u0442\u0430",
@@ -706,19 +706,19 @@
         ]
     },
     "Guides/First program": {
-        "name": "\u041f\u0435\u0440\u0432\u044b\u0439 \u043f\u0440\u043e\u0435\u043a\u0442",
+        "name": "Guides/First program",
         "text": [
             "TODO: \u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044e \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u043d\u0430 GE3 \u0441 'Hello, world' \u0438 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u043c\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u0430"
         ]
     },
     "Guides/Variables": {
-        "name": "\u041f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435",
+        "name": "Guides/Variables",
         "text": [
             "TODO: \u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044e \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u043d\u0430 GE3 \u0441 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435\u043c \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0445"
         ]
     },
     "Guides/Project - Dino": {
-        "name": "\u041f\u0440\u043e\u0435\u043a\u0442 - Dino",
+        "name": "Guides/Project - Dino",
         "text": [
             "TODO: \u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044e \u0438\u0433\u0440\u044b 'Google Dino'"
         ]

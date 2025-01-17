@@ -115,6 +115,8 @@ async function mainInformationView(){
 
     // var text = `<p class="content__main__name">${chooseMenu}</p>`;
 
+    console.log(menues["menues"][language], chooseMenu);
+
     for (const key in menues["menues"][language][chooseMenu]["text"]){
         var line = menues["menues"][language][chooseMenu]["text"][key];
 
@@ -135,7 +137,7 @@ async function mainInformationView(){
 
     mainClass.innerHTML = text;
 }
-//
+
 async function initialization(){
     var en = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/en.json");
     var ru = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/ru.json");
@@ -143,7 +145,7 @@ async function initialization(){
     menues["menues"]["en"] = en;
     menues["menues"]["ru"] = ru;
 
-    const menuClass = document.querySelector(".content__menu");
+    const menuClass = document.querySelector(".content__menu__choose");
 
     var text = "";
 
@@ -182,6 +184,12 @@ async function initialization(){
     menuClass.innerHTML = text;
 
     mainInformationView();
+}
+
+async function setLanguage(lang) {
+    language = lang;
+
+    initialization();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
