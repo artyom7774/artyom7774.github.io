@@ -120,7 +120,15 @@ body {
 }
 
 .footer {
+    background-color: #ffffff;
+
     margin: 5px;
+
+    margin-top: 10px;
+}
+
+.footer__text {
+    text-align: center;
 }
 
 p {

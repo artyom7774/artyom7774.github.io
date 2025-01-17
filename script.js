@@ -1,7 +1,6 @@
 var chooseMenu = "Game Engine 3";
-var language = "en"
+var language = "en";
 
-/*
 var menues = {
     "menu": {
         "Game Engine 3": {
@@ -59,50 +58,38 @@ var menues = {
         
     }
 }
-*/
 
-var menues = {
-    "menu": {
-        "Game Engine 3": {
-
-        },
-        "Download": {
-
-        },
-        "Control": {
-            
-        },
-        "Nodes": {
-            "Events": {
-
-            },
-            "Loops": {
-
-            },
-            "Text": {
-
-            },
-            "Numbers": {
-
-            },
-            "Logic": {
-
-            },
-            "Objects": {
-
-            },
-            "Another": {
-
-            },
-            "Set": {
-
-            }
-        }
-    },
-
-    "menues": {
-        
+var translates = {
+    "ru": {
+        "Download": "Загрузка",
+        "Control": "Управление",
+        "Nodes": "Ноды",
+        "Events": "События",
+        "Loops": "Циклы",
+        "Text": "Текст",
+        "Numbers": "Числа",
+        "Logic": "Логика",
+        "Objects": "Объекты",
+        "Another": "Другое",
+        "Set": "Множество",
+        "Guides": "Помощь",
+        "Start": "Начало",
+        "First program": "Первая программа",
+        "Variables": "Переменные",
+        "Project - Dino": "Проект - Динозаврик"
     }
+}
+
+function translate(text) {
+    if (language == "en"){
+        return text;
+    }
+
+    if (text in translates[language]){
+        return translates[language][text];
+    }
+    
+    return text;
 }
 
 function cache(func) {
@@ -199,9 +186,9 @@ async function initialization(){
         var menu = menues["menues"][language][key]["name"];
     
         if (menu == chooseMenu){
-            text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}')">• ${menu}</button>`;
+            text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}')">• ${translate(menu)}</button>`;
         } else {
-            text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}')">${menu}</button>`;
+            text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}')">${translate(menu)}</button>`;
         }
 
         if (Object.keys(menues["menu"][key]).length != 0){
@@ -217,9 +204,9 @@ async function initialization(){
                 }
 
                 if (`${menu}/${element}` == chooseMenu){
-                    text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}/${element}')">${char}&nbsp;• ${element}</button>`;
+                    text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}/${element}')">${char}&nbsp;• ${translate(element)}</button>`;
                 } else {
-                    text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}/${element}')">${char}&nbsp;${element}</button>`;
+                    text += `<button class="content__menu__button" onclick="menuButtonFunction('${menu}/${element}')">${char}&nbsp;${translate(element)}</button>`;
                 }
 
                 index += 1;
