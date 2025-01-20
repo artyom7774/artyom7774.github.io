@@ -1,7 +1,7 @@
 var chooseMenu = "Game Engine 3";
 var language = "en";
 
-var menues = {
+let menues = {
     "menu": {
         "Game Engine 3": {
 
@@ -59,7 +59,7 @@ var menues = {
     }
 }
 
-var translates = {
+let anotherTranslates = {
     "ru": {
         "Shell \"Game Engine 3\" software in Python, which allows you to create various applications using visual programming based on a system of nodes": "Программная оболочка \"Game Engine 3\" на языке Python, позволяющей создавать различные приложения с использованием визуального программирования",
         "Download": "Загрузка",
@@ -86,8 +86,8 @@ function translate(text) {
         return text;
     }
 
-    if (text in translates[language]){
-        return translates[language][text];
+    if (text in anotherTranslates[language]){
+        return anotherTranslates[language][text];
     }
     
     return text;
@@ -181,11 +181,24 @@ async function headerView(){
 }
 
 async function initialization(){
-    var en = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/en.json");
-    var ru = await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/ru.json");
+    menues["menues"]["en"] = (await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/en.json"));
+    menues["menues"]["ru"] = (await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/artyom7774.github.io/main/translates/ru.json"));
 
-    menues["menues"]["en"] = en;
-    menues["menues"]["ru"] = ru;
+    for (const language in menues["menues"]){
+        var nodes = [];
+
+        for (const type in menues["menues"][language]){
+            if (!(type.startsWith("Nodes/"))){
+                continue;
+            }
+
+            for (const index in menues["menues"][language][type]["text"]){
+                nodes.push(menues["menues"][language][type]["text"][index]);
+            }
+        }
+
+        menues["menues"][language]["Nodes"]["text"] = nodes;
+    }
 
     const menuClass = document.querySelector(".content__menu__choose");
 
