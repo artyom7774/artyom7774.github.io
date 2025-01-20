@@ -440,7 +440,8 @@
             "Description of the main functions of the project",
             "----------------------------------------------------------------------------------------------------",
             "Create project",
-            "<img class='content__main__guides__image' src='scr/projects/1-1.png'>"
+            "<img class='content__main__guides__image' src='scr/projects/1-1.png'>",
+            "<h6>123</h6>"
         ]
     },
     "Guides/First program": {
