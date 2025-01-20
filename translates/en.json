@@ -439,9 +439,14 @@
             "<p class='content__main__name'>Start</p>",
             "Description of the main functions of the project",
             "----------------------------------------------------------------------------------------------------",
-            "Create project",
-            "<img class='content__main__guides__image' src='scr/projects/1-1.png'>",
-            "<h6>123</h6>"
+            "<p class='content__main__name'>Menues</p>",
+            "<p class='content__submain__name'>Menu File: </p>",
+            "• Create - create project",
+            "• Copy template - create project from template",
+            "• Open - open created project",
+            "• Close - close project",
+            "• Settings - project settings (language, theme, e.g.)",
+            "<img class='content__main__guides__image' src='scr/projects/1-1.png'>"
         ]
     },
     "Guides/First program": {
