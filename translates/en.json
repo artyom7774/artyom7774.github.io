@@ -252,7 +252,7 @@
             "Output: path",
             "",
             "Move object by ID on power by angle",
-            "The power parameter is the acceleration of the object. The total distance traveled by the object is: \\( \\frac{A(A+1)}{2} \\)",
+            "The power parameter is the acceleration of the object. The total distance traveled by the object is: (angle * (angle + 1)) / 2",
             "<img class='content__main__image' width='675' src='scr/guide/23.png'>",
             "----------------------------------------------------------------------------------------------------",
             "<p class='content__main__name'>Get object pos</p>",
