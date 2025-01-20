@@ -120,17 +120,9 @@ body {
     color: grey;
 }
 
-.content__main__guides__div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
 .content__main__guides__image {
-    width: 46%;
+    width: 50%;
 }
-
 
 .footer {
     background-color: #ffffff;
