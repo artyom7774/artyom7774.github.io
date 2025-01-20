@@ -120,10 +120,15 @@ body {
     color: grey;
 }
 
-.content__main__guides__image {
-    width: 96%;
+.content__main__guides__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
-    padding-left: 2%;
+.content__main__guides__image {
+    width: 46%;
 }
 
 

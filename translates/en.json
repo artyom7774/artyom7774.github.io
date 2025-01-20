@@ -439,8 +439,12 @@
             "<p class='content__main__name'>Start</p>",
             "Description of the main functions of the project",
             "----------------------------------------------------------------------------------------------------",
+            "<div class='content__main__guides__div'>",
+            "<div class='content__main__guides__text'>",
             "123",
-            "<img class='content__main__guides__image' src='scr/projects/1-1.png'>"
+            "</div>",
+            "<img class='content__main__guides__image' src='scr/projects/1-1.png'>",
+            "</div>"
         ]
     },
     "Guides/First program": {
