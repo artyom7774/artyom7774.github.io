@@ -445,7 +445,7 @@
             "• Copy template - create project from template",
             "• Open - open created project",
             "• Close - close project",
-            "• Settings - project settings (language, theme, e.g.)",
+            "• Settings - project settings (language, theme, etc.)",
             "<img class='content__main__guides__image' src='scr/projects/1-1.png'>"
         ]
     },
