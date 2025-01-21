@@ -252,7 +252,7 @@
             "Output: path",
             "",
             "Move object by ID on power by angle",
-            "The power parameter is the acceleration of the object. The total distance traveled by the object is: (angle * (angle + 1)) / 2",
+            "The power parameter is the acceleration of the object",
             "<img class='content__main__image' width='675' src='scr/guide/23.png'>",
             "----------------------------------------------------------------------------------------------------",
             "<p class='content__main__name'>Get object pos</p>",
@@ -477,7 +477,23 @@
             "• Start scene - scene from which to launch the project",
             "<div class='image__container'>",
             "<img class='image__container__image' src='scr/projects/1-4.png'>",
-            "</div>"
+            "</div>",
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Objects</p>",
+            "<p class='content__submain__name'>Settings:</p>",
+            "• Object type - type of object (dynamic or static)",
+            "<p class='content__submain__name'>Static Object:</p>",
+            "• Object position - X, Y of object",
+            "• Object hitbox - hitbox of object, starts in X + x_offset and Y + y_offset with width and height",
+            "• Object sprite - path to image, x, y and width, height of image",
+            "• Name of object group - object group (for collisions)",
+            "• Object layer - layer of drawing",
+            "<p class='content__submain__name'>Dynamic Object:</p>",
+            "• Moving speed - object speed",
+            "• Object gravity - gravity of object (acceleration of object falling), formula: gravity / 1000",
+            "• Power jump - power of object jump",
+            "• Braking power - braking of object, by how much the speed of the object decreases each frame",
+            "----------------------------------------------------------------------------------------------------"
         ]
     },
     "Guides/First program": {
