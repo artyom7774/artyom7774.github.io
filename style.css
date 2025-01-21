@@ -150,6 +150,17 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
+.image__container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image__container img {
+    margin-right: 10px;
+
+    height: 20%;
+}
+
 @media (max-width: 768px) {
     
 }
