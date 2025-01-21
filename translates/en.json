@@ -450,7 +450,11 @@
             "",
             "<p class='content__submain__name'>Menu Program: </p>",
             "• ",
-            "<div class='image__container'><img class='image__container__image' src='scr/projects/1-1.png'><img class='image__container__image' src='scr/projects/1-2.png'></div>"
+            "<div class='image__container'>",
+            "<img class='image__container__image' src='scr/projects/1-1.png'>",
+            "<img class='image__container__image' src='scr/projects/1-2.png'>",
+            "<img class='image__container__image' src='scr/projects/1-3.png'>",
+            "</div>"
         ]
     },
     "Guides/First program": {

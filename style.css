@@ -156,9 +156,9 @@ img {
 }
 
 .image__container__image {
-    margin-right: 10px;
+    margin-right: 5px;
 
-    height: 25%;
+    height: 200px;
 }
 
 @media (max-width: 768px) {
