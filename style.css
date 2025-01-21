@@ -120,8 +120,8 @@ body {
     color: grey;
 }
 
-.content__main__guides__image {
-    width: 50%;
+.content__main__guides__image__small {
+    width: 20%;
 }
 
 .footer {
