@@ -155,10 +155,10 @@ img {
     justify-content: flex-start;
 }
 
-.image__container img {
+.image__container__image {
     margin-right: 10px;
 
-    height: 20%;
+    height: 25%;
 }
 
 @media (max-width: 768px) {

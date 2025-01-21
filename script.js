@@ -170,8 +170,6 @@ async function mainInformationView(){
     console.log(text);
 
     mainClass.innerHTML = text;
-
-    katex.render(text, mainClass, { throwOnError: false });
 }
 
 async function headerView(){
