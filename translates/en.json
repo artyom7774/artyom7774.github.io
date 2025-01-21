@@ -496,6 +496,9 @@
             "• Object gravity - gravity of object (acceleration of object falling), formula: gravity / 1000",
             "• Power jump - power of object jump",
             "• Braking power - braking of object, by how much the speed of the object decreases each frame",
+            "<div class='image__container'>",
+            "<img class='image__container__image' src='scr/projects/1-5.png'>",
+            "</div>",
             "----------------------------------------------------------------------------------------------------"
         ]
     },
