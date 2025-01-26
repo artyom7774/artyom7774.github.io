@@ -47,6 +47,37 @@
             "• Right mouse button - menu"
         ]
     },
+    "Programming": {
+        "name": "Programming",
+        "text": [
+            "<p class='content__main__name'>Programming</p>",
+            "This shell allows you to write python code for application development",
+            "To do this, you need to use a \"Python\" node in your code",
+            "",
+            "On running node, code writing in code was running and activate function run",
+            "There are also additional functions that repeat the functionality of nodes",
+            "",
+            "Functions:",
+            "• decodeHolder(text) -> return decoded value",
+            "• exit() -> close project",
+            "• getVar(name, global) -> return variable by name and globality",
+            "• setVar(name, global, value) -> set value to variable by name and globality",
+            "• objectsGroup(group) -> return all objects in group",
+            "• random(a, b) -> return random number in [a, b]",
+            "• writeText(text) -> write text on console",
+            "• displayText(text, x, y) -> display text on scene in x, y",
+            "• collision(ids, group, append) -> return [True, object ID] if collision else [False, -1]. Append - count contact as a collision",
+            "• createObject(name, x, y) -> create object by name in dir objects and place this on x, y",
+            "• getObjectIDByName(name) -> return ID of object by name. Name have object which were created on stage before running",
+            "• getObjectPos(id) -> return object x, y by ID",
+            "• setObjectPos(id, x, y) -> set position for object by ID",
+            "• getObjectVar(id, name) -> return variable by object ID and name",
+            "• setObjectVar(id, name, value) -> set value to variable by id and name",
+            "• jump(id) -> jump for object by ID",
+            "• moveObject(id, angle, power) -> create moving vector by angle and power for object ID",
+            "• removeObject(id) -> remove object by ID"
+        ]
+    },
     "Nodes": {
         "name": "Nodes",
         "text": [
