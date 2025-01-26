@@ -353,7 +353,17 @@
             "",
             "Return len of object, if object type is not dict or list return 1",
             "<img class='content__main__image' width='575' src='scr/guide/44.png'>",
-            "----------------------------------------------------------------------------------------------------"
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Python</p>",
+            "Input: path, code, list, dict",
+            "Output: list output",
+            "",
+            "Running code in function \"run\" with args = list, kwargs = dict",
+            "What will be returned via return in code will be returned to the list output",
+            "A more detailed guide can be found in the Programming tab",
+            "",
+            "<img class='content__main__image' width='575' src='scr/guide/45.png'>",
+            "<img class='content__main__image' src='scr/guide/46.png'>"
         ]
     },
     "Nodes/Set": {
