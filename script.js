@@ -80,7 +80,8 @@ let anotherTranslates = {
         "Start": "Начало",
         "First program": "Первая программа",
         "Variables": "Переменные",
-        "Project - Dino": "Проект - Динозаврик"
+        "Project - Dino": "Проект - Динозаврик",
+        "Programming": "Программирование"
     }
 }
 
