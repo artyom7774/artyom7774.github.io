@@ -553,9 +553,11 @@
         "name": "Guides/First program",
         "text": [
             "<p class='content__main__name'>Образцы разных вариантов программы \"Hello World\"</p>",
+            "<div class='image__container'>",
             "<img class='image__container__image' width='475' src='scr/projects/2-1.png'>",
             "<img class='image__container__image' width='475' src='scr/projects/2-2.png'>",
-            "<img class='image__container__image' width='475' src='scr/projects/2-3.png'>"
+            "<img class='image__container__image' width='475' src='scr/projects/2-3.png'>",
+            "</div>"
         ]
     },
     "Guides/Variables": {

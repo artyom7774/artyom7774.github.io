@@ -564,9 +564,11 @@
         "name": "First program",
         "text": [
             "<p class='content__main__name'>Samples of different versions of the initial program \"Hello World\"</p>",
-            "<img class='image__container__image' src='scr/projects/2-1.png'>",
-            "<img class='image__container__image' src='scr/projects/2-2.png'>",
-            "<img class='image__container__image' src='scr/projects/2-3.png'>"
+            "<div class='image__container'>",
+            "<img class='image__container__image' width='475' src='scr/projects/2-1.png'>",
+            "<img class='image__container__image' width='475' src='scr/projects/2-2.png'>",
+            "<img class='image__container__image' width='475' src='scr/projects/2-3.png'>",
+            "</div>"
         ]
     },
     "Guides/Variables": {
