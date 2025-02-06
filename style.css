@@ -161,6 +161,12 @@ img {
     height: 200px;
 }
 
+.image__container__image__second {
+    margin-right: 5px;
+
+    height: 150px;
+}
+
 @media (max-width: 768px) {
     
 }
