@@ -553,9 +553,9 @@
         "name": "Guides/First program",
         "text": [
             "<p class='content__main__name'>образцы разных вариантов начальной программы \"Hello World\"</p>",
-            "<img class='image__container__image' src='scr/projects/2-1.png'>",
-            "<img class='image__container__image' src='scr/projects/2-2.png'>",
-            "<img class='image__container__image' src='scr/projects/2-3.png'>"
+            "<img class='image__container__image' width='475' src='scr/projects/2-1.png'>",
+            "<img class='image__container__image' width='475' src='scr/projects/2-2.png'>",
+            "<img class='image__container__image' width='475' src='scr/projects/2-3.png'>"
         ]
     },
     "Guides/Variables": {
