@@ -531,6 +531,8 @@
             "• Object sprite - path to image, x, y and width, height of image",
             "• Name of object group - object group (for collisions)",
             "• Object layer - layer of drawing",
+            "• Invisible - object sprite invisible on scene",
+            "• Animation - object animation",
             "",
             "<p class='content__submain__name'>Dynamic Object: </p>",
             "• Moving speed - object speed",
@@ -557,7 +559,10 @@
             "",
             "<p class='content__submain__name'>Another: </p>",
             "• for selected object you can change parameters and variables for ONLY this object",
-            "• Q - clear selected"
+            "• Q - clear selected",
+            "<div class='image__container'>",
+            "<img class='image__container__image' src='scr/projects/1-7.png'>",
+            "</div>"
         ]
     },
     "Guides/First program": {
