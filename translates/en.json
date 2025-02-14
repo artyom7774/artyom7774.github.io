@@ -135,7 +135,9 @@
             "",
             "Return path every frame while key pressed",
             "<img class='content__main__image' width='375' src='scr/guide/7.png'>",
-            "----------------------------------------------------------------------------------------------------"
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Symbols names</p>",
+            "%symbol-keys-table%"
         ]
     },
     "Nodes/Loops": {
@@ -401,14 +403,15 @@
             "Output: path, list",
             "",
             "Initializate function with function name, on call return path and getted list",
-            "<img class='content__main__image' width='575' src='scr/guide/47.png'>",
+            "<img class='content__main__image' width='375' src='scr/guide/47.png'>",
             "----------------------------------------------------------------------------------------------------",
             "<p class='content__main__name'>Call function</p>",
             "Input: path, function name, list",
             "Output: path",
             "",
             "Call function by name",
-            "<img class='content__main__image' width='575' src='scr/guide/48.png'>"
+            "<img class='content__main__image' width='425' src='scr/guide/48.png'>",
+            "----------------------------------------------------------------------------------------------------"
         ]
     },
     "Nodes/Set": {

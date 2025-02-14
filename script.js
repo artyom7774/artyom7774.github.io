@@ -85,6 +85,31 @@ let anotherTranslates = {
     }
 }
 
+let symbolKeysTable = ```
+<table style="border: 1px solid rgb(0, 0, 0);">
+  <thead>
+    <tr>
+      <th style="border: 1px solid rgb(0, 0, 0);">Header 1</th>
+      <th style="border: 1px solid rgb(0, 0, 0);">Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid rgb(0, 0, 0);">vi0ey9</td>
+      <td style="border: 1px solid rgb(0, 0, 0);">5e2sg</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid rgb(0, 0, 0);">6l5yjjh</td>
+      <td style="border: 1px solid rgb(0, 0, 0);">wsaedz</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid rgb(0, 0, 0);">mtedu9</td>
+      <td style="border: 1px solid rgb(0, 0, 0);">zd74ph</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 function translate(text) {
     if (language == "en"){
         return text;
@@ -136,6 +161,7 @@ async function holder(text){
     version = (await cacheLoadJSON("https://raw.githubusercontent.com/artyom7774/Game-Engine-3/main/scr/files/version.json"))["version"];
 
     text = await text.replace(/%version%/g, version);
+    text = await text.replace(/%symbol-keys-table%/g, symbolKeysTable);
 
     return text;
 }
