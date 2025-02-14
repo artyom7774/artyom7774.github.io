@@ -134,10 +134,7 @@
             "Output: path",
             "",
             "Return path every frame while key pressed",
-            "<img class='content__main__image' width='375' src='scr/guide/7.png'>",
-            "----------------------------------------------------------------------------------------------------",
-            "<p class='content__main__name'>Symbols names</p>",
-            "%symbol-keys-table%"
+            "<img class='content__main__image' width='375' src='scr/guide/7.png'>"
         ]
     },
     "Nodes/Loops": {
