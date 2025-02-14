@@ -85,7 +85,7 @@ let anotherTranslates = {
     }
 }
 
-let symbolKeysTable = ```
+let symbolKeysTable = `
 <table style="border: 1px solid rgb(0, 0, 0);">
   <thead>
     <tr>
@@ -108,7 +108,7 @@ let symbolKeysTable = ```
     </tr>
   </tbody>
 </table>
-```
+`
 
 function translate(text) {
     if (language == "en"){
