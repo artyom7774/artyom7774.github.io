@@ -401,14 +401,14 @@
             "Output: путь, список",
             "",
             "Инициализирует функцию по именем, при вызове возращает путь и полученный список",
-            "<img class='content__main__image' width='575' src='scr/guide/47.png'>",
+            "<img class='content__main__image' width='375' src='scr/guide/47.png'>",
             "----------------------------------------------------------------------------------------------------",
             "<p class='content__main__name'>Вызрывать функции</p>",
             "Input: путь, имя функции, список",
             "Output: путь",
             "",
             "Вызвает функцию по имени",
-            "<img class='content__main__image' width='575' src='scr/guide/48.png'>"
+            "<img class='content__main__image' width='425' src='scr/guide/48.png'>"
         ]
     },
     "Guides": {
