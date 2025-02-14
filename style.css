@@ -1,6 +1,6 @@
 body {
     background-color: #f0f0f0;
-    font-family: 'DejaVu Sans Mono', 'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
 }
 
 .header {
@@ -168,5 +168,7 @@ img {
 }
 
 @media (max-width: 768px) {
-    
+    body {
+        font-family: 'DejaVu Sans Mono', 'Courier New';
+    }
 }
