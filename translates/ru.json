@@ -570,7 +570,17 @@
             "",
             "<div class='image__container'>",
             "<img class='image__container__image' src='scr/projects/1-7.png'>",
-            "</div>"
+            "</div>",
+            "<p class='content__main__name'>Функции</p>",
+            "<p class='content__submain__name'>Основные:</p>",
+            "• Создать - создать новый нод",
+            "• Копировать - копировать нод",
+            "• Вставить - вставить скопированный нод",
+            "• Удалить - удалить нод",
+            "<div class='image__container'>",
+            "<img class='image__container__image' src='scr/projects/1-9.png'>",
+            "</div>",
+            "----------------------------------------------------------------------------------------------------"
         ]
     },
     "Guides/First program": {

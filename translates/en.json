@@ -570,7 +570,18 @@
             "",
             "<div class='image__container'>",
             "<img class='image__container__image' src='scr/projects/1-7.png'>",
-            "</div>"
+            "</div>",
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Functions </p>",
+            "<p class='content__submain__name'>Main: </p>",
+            "• Create - create new node",
+            "• Copy - copy node",
+            "• Paste - paste copyed node",
+            "• Delete - delete node",
+            "<div class='image__container'>",
+            "<img class='image__container__image' src='scr/projects/1-9.png'>",
+            "</div>",
+            "----------------------------------------------------------------------------------------------------"
         ]
     },
     "Guides/First program": {
