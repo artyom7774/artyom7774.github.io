@@ -168,5 +168,7 @@ img {
 }
 
 @media (max-width: 768px) {
-    
+    body {
+        font-family: 'DejaVu Sans Mono', 'Courier New';
+    }
 }
