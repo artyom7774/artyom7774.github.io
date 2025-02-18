@@ -5,6 +5,8 @@
             "<p class=\"content__main__name\">Game Engine 3</p>",
             "Добро пожаловать в Game Engine 3 - инструмент, предназначенный для упрощения процесса разработки приложений и игр, подходящий как для начинающих, так и для профессиональных разработчиков!",
             "",
+            "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iC7fprKpOBU\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+            "",
             "Как установить программу:",
             "• Скачать последнюю версию: <a href=\"https://github.com/artyom7774/Game-Engine-3/releases/download/GE%version%/Game-Engine-3-windows.exe\">нажмите для загрузки</a> (Windows)",
             "• Запустите файл \"Game Engine 3.exe\" (после запуска будут установлены необходимые библиотеки).",
