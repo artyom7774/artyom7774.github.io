@@ -71,7 +71,7 @@
             "- collision(id, group, append) -> возвращает [True, ID объекта] при столкновении, иначе [False, -1]. Append - считать контакт столкновением",
             "- createObject(name, x, y) -> создаем объект по имени в dir objects и помещаем его на x, y",
             "- getObjectIDByName(name) -> возвращает ID объекта по имени. Имя имеют объекты, которые были созданы на сцене перед запуском",
-            "- getObjectPos(id) -> вернуть объект x, y по ID",
+            "- getObjectPos(id) -> возвращает объект x, y по ID",
             "- setObjectPos(id, x, y) -> установить позицию для объекта по ID",
             "- getObjectVar(id, name) -> возвращает переменную по ID и имени объекта",
             "- setObjectVar(id, name, value) -> установить значение переменной по ID и имени",
