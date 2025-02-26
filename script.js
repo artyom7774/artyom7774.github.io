@@ -64,7 +64,7 @@ let menues = {
 
 let anotherTranslates = {
     "ru": {
-        "Shell \"Game Engine 3\" software in Python, which allows you to create various applications using visual programming based on a system of nodes": "Программная оболочка \"Game Engine 3\" на языке Python, позволяющей создавать различные приложения с использованием визуального программирования",
+        "Shell \"Game Engine 3\" software in Python, which allows you to create various applications using visual programming based on a system of nodes": "Программная оболочка \"Game Engine 3\" на языке Python, позволяющая создавать различные приложения с использованием визуального программирования",
         "Download": "Загрузка",
         "Control": "Управление",
         "Nodes": "Ноды",
