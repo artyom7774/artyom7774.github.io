@@ -77,6 +77,7 @@ let anotherTranslates = {
         "Numbers": "Числа",
         "Logic": "Логика",
         "Objects": "Объекты",
+        "Animations": "Анимации",
         "Another": "Другое",
         "Set": "Множество",
         "Guides": "Помощь",
