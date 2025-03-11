@@ -81,7 +81,8 @@
             "• getResultingVector(id) -> returns [x, y] - the resulting all vectors for object by ID",
             "• runAnimation(id, animation) -> starts the animation for the object by ID",
             "• stopAnimation(id) -> sets the animation to the base if it exists, otherwise sets the object's sprite for the object by ID",
-            "• mirrorAnimation(id, horizontal, vertical) -> mirrors animations of the object by ID horizontally and vertically, sets True for reflection on this axis"
+            "• mirrorAnimation(id, horizontal, vertical) -> mirrors animations of the object by ID horizontally and vertically, sets True for reflection on this axis",
+            "• getMousePos() -> return mouse x, y"
         ]
     },
     "Nodes": {
@@ -449,6 +450,13 @@
             "",
             "Call function by name",
             "<img class='content__main__image' width='425' src='scr/guide/48.png'>",
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Get mouse pos</p>",
+            "Input: path",
+            "Output: path, x, y",
+            "",
+            "Return mouse x, y",
+            "<img class='content__main__image' width='1025' src='scr/guide/53.png'>",
             "----------------------------------------------------------------------------------------------------"
         ]
     },
