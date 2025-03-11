@@ -338,8 +338,35 @@
             "Input: path, object ID",
             "Output: path",
             "",
-            "Imitate jump for object. WORKING ONLY WITH DINAMIC OBJECT!!!",
+            "Imitate jump for object",
+            "OBJECT MUST BY DYNAMIC!!!",
             "<img class='content__main__image' width='600' src='scr/guide/29.png'>",
+            "----------------------------------------------------------------------------------------------------"
+        ]
+    },
+    "Nodes/Animations": {
+        "name": "Nodes Animations",
+        "text": [
+            "<p class='content__main__name'>Run animation</p>",
+            "Input: path, object ID, animation",
+            "Output: path",
+            "",
+            "Starts the animation for the object by ID",
+            "<img class='content__main__image' width='625' src='scr/guide/50.png'>",
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Stop animation</p>",
+            "Input: path, object ID",
+            "Output: path",
+            "",
+            "Sets the animation to the base if it exists, else sets the object's sprite for the object by ID",
+            "<img class='content__main__image' width='575' src='scr/guide/51.png'>",
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Mirror animation</p>",
+            "Input: path, object ID, horizontal, vertical",
+            "Output: path",
+            "",
+            "Mirrors animations of the object by ID horizontally and vertically, sets True for reflection on this axis",
+            "<img class='content__main__image' width='675' src='scr/guide/52.png'>",
             "----------------------------------------------------------------------------------------------------"
         ]
     },

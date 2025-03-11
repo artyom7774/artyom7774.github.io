@@ -34,6 +34,9 @@ let menues = {
             "Objects": {
 
             },
+            "Animations": {
+
+            },
             "Another": {
 
             },
