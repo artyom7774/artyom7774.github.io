@@ -77,7 +77,11 @@
             "• setObjectVar(id, name, value) -> set value to variable by id and name",
             "• jump(id) -> jump for object by ID",
             "• moveObject(id, angle, power) -> create moving vector by angle and power for object ID",
-            "• removeObject(id) -> remove object by ID"
+            "• removeObject(id) -> remove object by ID",
+            "• getResultingVector(id) -> returns [x, y] - the resulting all vectors for object by ID",
+            "• runAnimation(id, animation) -> starts the animation for the object by ID",
+            "• stopAnimation(id) -> sets the animation to the base if it exists, otherwise sets the object's sprite for the object by ID",
+            "• mirrorAnimation(id, horizontal, vertical) -> mirrors animations of the object by ID horizontally and vertically, sets True for reflection on this axis"
         ]
     },
     "Nodes": {
@@ -321,6 +325,14 @@
             "",
             "Delete object by ID",
             "<img class='content__main__image' width='600' src='scr/guide/28.png'>",
+            "----------------------------------------------------------------------------------------------------",
+            "<p class='content__main__name'>Get resulting vector</p>",
+            "Input: path, object ID",
+            "Output: path, x, y",
+            "",
+            "returns [x, y] - the resulting all vectors for object by ID",
+            "OBJECT MUST BY DYNAMIC!!!",
+            "<img class='content__main__image' width='825' src='scr/guide/49.png'>",
             "----------------------------------------------------------------------------------------------------",
             "<p class='content__main__name'>Jump</p>",
             "Input: path, object ID",
