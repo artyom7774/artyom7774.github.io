@@ -5,8 +5,6 @@
             "<p class='content__main__name'>Game Engine 3</p>",
             "Welcome to Game Engine 3 - a tool designed to simplify the app and game development process, suitable for beginners and professional developers!",
             "",
-            "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iC7fprKpOBU\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-            "",
             "How to install the program:",
             "• Download last version: <a href='https://github.com/artyom7774/Game-Engine-3/releases/download/GE%version%/Game-Engine-3-windows.exe'>click to download</a> (Windows)",
             "• Run file \"Game Engine 3.exe\" (after launch the necessary libraries will be installed)",
