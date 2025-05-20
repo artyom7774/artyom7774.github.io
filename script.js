@@ -1,5 +1,7 @@
 var chooseMenu = "Game Engine 3";
+
 var language = "en";
+var theme = "light";
 
 let menues = {
     "menu": {
@@ -234,6 +236,11 @@ async function initialization(){
         menues["menues"][language]["Nodes"]["text"] = nodes;
     }
 
+    const headerThemeSettingLight = document.querySelector(".header__theme__setting__light");
+    const headerThemeSettingDark = document.querySelector(".header__theme__setting__dark");
+
+    headerThemeSettingLight.textContent = 'Новый текст';
+
     const menuClass = document.querySelector(".content__menu__choose");
 
     var text = "";
@@ -278,6 +285,12 @@ async function initialization(){
 
 async function setLanguage(lang) {
     language = lang;
+
+    initialization();
+}
+
+async function setTheme(them){
+    theme = them;
 
     initialization();
 }
